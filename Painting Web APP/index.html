@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Painting APP</title>
+
+<script type='text/javascript' src='js/jQuery.js'></script>
+<script type="text/javascript" src="js/paint.js"></script>
+<link rel="stylesheet" type="css/text" href="css/reset.css">
+<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="css/text" href="css/main.css">
+
+</head>
+
+<body>
+<div class="navItems">
+<h1>This is a painting APP</h1>
+</div>
+<div id="leftsidebar">
+    <div id="workPlace"><div class="listedIcons"><p></p></div></div>
+    <ul id="div-tiles">
+                <li class="listTile1"><div id="penTile" class="icon clicked" ><i class="fa fa-pencil"></i></div>
+
+                <div class="pen-tile-colors">
+                                    <form>
+                                    <label for=color-red>RED</label>
+                                    <input class="range-colors" type=range id=color-red min=0 value=0 max=255 step=1>
+                                    <label  for=color-green>GREEN</label>
+                                    <input class="range-colors" type=range id=color-green min=0 value=0 max=255 step=1>
+                                    <label for=color-blue>BLUE</label>
+                                    <input class="range-colors" type=range id=color-blue min=0 value=0 max=255 step=1>
+                                   </form>
+                </div></li>
+
+                <li class="listTile2"><div id="penWeigth" class="icon clicked" ><div class="dotWeigth"></div></div>
+
+                <div class="pen-tile-weigth">
+                                    <form>
+                                    <label for=color-red>BIG</label>
+                                    <input class="range-size" type=range id="pen-weigth" min=0 value=0 max=50 step=1>
+                                   </form>
+                </div></li>
+
+                <li class="listTile3"><div id="drawRect" class="icon clicked" ><div class="rect"></div></div>
+
+                <div class="rect-tile-color">
+                                    <form>
+                                    <label for=color-red>RED</label>
+                                    <input class="rect-colors" type=range id=colorSq-red min=0 value=0 max=255 step=1>
+                                    <label  for=color-green>GREEN</label>
+                                    <input class="rect-colors" type=range id=colorSq-green min=0 value=0 max=255 step=1>
+                                    <label for=color-blue>BLUE</label>
+                                    <input class="rect-colors" type=range id=colorSq-blue min=0 value=0 max=255 step=1>
+                                   </form>
+                </div></li>
+
+    </ul>
+</div>
+ <canvas id="myCanvas" height="500" width="1000"></canvas>
+
+
+
+
+
+</body>
+
+
+<footer>
+</footer>
+</html>
